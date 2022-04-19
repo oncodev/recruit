@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "style.scss",
+        "_header.scss",
+        "_footer.scss",
+        "_index.scss",
+        "_company.scss",
+        "_work.scss",
+        "_recruit.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
