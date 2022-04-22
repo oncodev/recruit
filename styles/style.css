@@ -1,1 +1,390 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+:root {
+  --color-browser-bg: #888;
+  --footer-bg: #ECF2FA;
+  --color-blue-1: #0071FF;
+}
+
+html, body, #__next {
+  font-family: Noto Sans KR, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+  isolation: isolate;
+  line-height: 150%;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+div {
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  word-break: break-word;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+input, button {
+  border: none;
+  border-radius: 0;
+  background: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  line-height: 150%;
+}
+
+main {
+  position: absolute;
+  top: 45px;
+  height: 100%;
+  width: 100%;
+  overflow-x: clip;
+}
+
+main section {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main .title {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+main .title_box {
+  position: relative;
+  width: 1100px;
+  height: 390px;
+  background: #F8FBFF;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+main .title_box h1 {
+  font-size: 28px;
+  position: absolute;
+  top: -140px;
+}
+
+main .title_box p, main .title_box a {
+  font-size: 24px;
+  text-align: center;
+}
+
+main .title_box span {
+  color: var(--color-blue-1);
+}
+
+main .title::before {
+  content: '';
+  position: absolute;
+  left: -90px;
+  bottom: -140px;
+  width: 900px;
+  height: 900px;
+  border-radius: 900px;
+  z-index: -1;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 55, 251, 0.13) 0%, rgba(111, 142, 255, 0.065) 49.48%, rgba(198, 210, 255, 0) 100%);
+}
+
+main .title::after {
+  content: '';
+  position: absolute;
+  right: -450px;
+  top: -550px;
+  width: 1100px;
+  height: 1100px;
+  border-radius: 900px;
+  z-index: -1;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 55, 251, 0.2) 0%, rgba(111, 142, 255, 0.1) 49.48%, rgba(198, 210, 255, 0) 100%);
+}
+
+.header {
+  background: #120B3D;
+  color: #fff;
+  width: 100%;
+  height: 45px;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a {
+  padding: 16px;
+}
+
+.header_mobile_menu {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .header_mobile_menu {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .gnb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .gnb a {
+    padding: 8px;
+  }
+}
+
+.footer {
+  background: var(--footer-bg);
+}
+
+.footer p:nth-of-type(1) {
+  font-size: 1.5rem;
+}
+
+.footer p:nth-of-type(2), .footer p:nth-of-type(3) {
+  font-size: 1rem;
+  color: #ddd;
+  background: #eee;
+  border-radius: 10px;
+}
+
+.footer .openlink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .openlink a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 10px 10px 10px #eee;
+          box-shadow: 10px 10px 10px #eee;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.index {
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.index_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.index_menu img, .index_menu a {
+  padding: 16px;
+  margin: 8px;
+  width: 80%;
+  text-align: center;
+}
+
+.work .title::before {
+  left: inherit;
+  right: -40px;
+  bottom: -200px;
+  width: 900px;
+  height: 900px;
+}
+
+.work .title::after {
+  left: -450px;
+  right: inherit;
+  top: -550px;
+  width: 1130px;
+  height: 1130px;
+}
+
+.work .title_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+.work .title_section a {
+  padding: 0 24px;
+  margin: 0 8px;
+  width: 130px;
+  height: 130px;
+  font-size: 20px;
+}
+
+.work .title_section a:nth-of-type(1) {
+  background: center url("../../images/work/work_icon_1.png");
+  background-size: cover;
+}
+
+.work .title_section a:nth-of-type(1)::before {
+  content: 'AI 연구소';
+}
+
+.work .title_section a:nth-of-type(2) {
+  background: center url("../../images/work/work_icon_2.png");
+  background-size: cover;
+}
+
+.work .title_section a:nth-of-type(2)::before {
+  content: '바이오 연구소';
+}
+
+.work .title_section a:nth-of-type(3) {
+  background: center url("../../images/work/work_icon_3.png");
+  background-size: cover;
+}
+
+.work .title_section a:nth-of-type(3)::before {
+  content: '경영조직';
+}
+
+.work .title_section a::before {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  letter-spacing: -1px;
+  width: 130px;
+}
+
+.welfare span {
+  color: var(--color-blue-1);
+}
+/*# sourceMappingURL=style.css.map */
