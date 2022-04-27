@@ -6,8 +6,8 @@ export default class FooterComponent extends HTMLElement {
         <div class="openlink">
           <a href="/">채용 중인 공고 보기</a>
         </div>
-        <p>채용 관련 문의는 이메일로 문의 주시면 1~3일 이내로 답변을 드립니다. <br/> oncocross@oncocross.com</p>
-        <p>온코크로스 공식 홈페이지에 들어오시면 더 많은 소개를 보실 수 있습니다. <br/> https://www.oncocross.com</p>
+        <a href="mailto:oncocross@oncocross.com"><b>채용 관련 문의</b>는 <u>oncocross@oncocross.com</u> 메일로 문의 주시면 1~3일 이내로 답변을 받으실 수 있습니다.</a>
+        <a href="https://www.oncocross.com">온코크로스 <b>공식 홈페이지</b> <u>https://www.oncocross.com</u> 들어오시면 더 많은 소개를 보실 수 있습니다.</a>
       </div>
     `;
   }
