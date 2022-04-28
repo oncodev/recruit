@@ -4,8 +4,8 @@ export default class HeaderComponent extends HTMLElement {
       <div class="header">
         <div class="header_mobile_menu">메뉴</div>
         <div class="logo">
-          <!-- <a href="/recruit">홈</a> -->
-          <a href="/">홈</a>
+          <a href="/recruit">홈</a>
+          <!-- <a href="/">홈</a> -->
         </div>
         <div class="gnb">
           <a href="../pages/company.html">온코크로스는 어떤 회사일까</a>
