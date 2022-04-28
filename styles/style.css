@@ -560,7 +560,7 @@ wc-footer {
 }
 
 .work .title_section a:nth-of-type(1) {
-  background: center url("../../images/work/work_icon_1.png");
+  background: center url("/recruit/images/work/work_icon_1.png");
   background-size: cover;
 }
 
@@ -569,7 +569,7 @@ wc-footer {
 }
 
 .work .title_section a:nth-of-type(2) {
-  background: center url("../../images/work/work_icon_2.png");
+  background: center url("/recruit/images/work/work_icon_2.png");
   background-size: cover;
 }
 
@@ -578,7 +578,7 @@ wc-footer {
 }
 
 .work .title_section a:nth-of-type(3) {
-  background: center url("../../images/work/work_icon_3.png");
+  background: center url("/recruit/images/work/work_icon_3.png");
   background-size: cover;
 }
 

@@ -12,9 +12,9 @@
       display: flex; justify-content: center; gap: 40px; padding-bottom: 32px;
       a {
         padding: 0 24px; margin: 0 8px; width: 130px; height: 130px; font-size: 1.25rem; border-radius: 50%; mix-blend-mode: multiply;
-        &:nth-of-type(1) {background: center url('../../images/work/work_icon_1.png'); background-size: cover;&::before {content: 'AI 연구소';}}
-        &:nth-of-type(2) {background: center url('../../images/work/work_icon_2.png'); background-size: cover;&::before {content: '바이오 연구소';}}
-        &:nth-of-type(3) {background: center url('../../images/work/work_icon_3.png'); background-size: cover;&::before {content: '경영조직';}}
+        &:nth-of-type(1) {background: center url('/recruit/images/work/work_icon_1.png'); background-size: cover;&::before {content: 'AI 연구소';}}
+        &:nth-of-type(2) {background: center url('/recruit/images/work/work_icon_2.png'); background-size: cover;&::before {content: '바이오 연구소';}}
+        &:nth-of-type(3) {background: center url('/recruit/images/work/work_icon_3.png'); background-size: cover;&::before {content: '경영조직';}}
         &::before {position: absolute; bottom: -50px; left: 0; letter-spacing: -1px; width: 130px;}
         &:hover {mix-blend-mode: normal; transition: .5;}
         }
