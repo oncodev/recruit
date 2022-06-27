@@ -1,2 +1,7 @@
 .footer {display: grid;}
 .footer a {font-size: 0.875rem; color: var(--color-3);}
+
+
+@media (max-width: 960px) {
+  .footer a {font-size: 0.75rem;}
+}

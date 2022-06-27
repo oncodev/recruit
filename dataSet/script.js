@@ -30,7 +30,7 @@ jsonData.data.map((i)=>{
     <p>${i.lab}</p>
     <p>${i.position}</p>
     <p>${i.stack}</p>
-    <a src=${i.url}>button</a>
+    <a src=${i.url}>For more information</a>
   `;
   recruitDataSet.append(li)
 });

@@ -1,12 +1,4 @@
-:root {
-  --color-browser-bg: #fff;
-  --color-1: #0071FF;
-  --color-2: #ECF2FA;
-  --color-3: #888;
-}
-
-
-html,body,#__next{
+html,body {
   padding: 0; margin: 0; overflow: hidden;
   font-family: Noto Sans KR, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -43,3 +35,10 @@ input,button,textarea,select{font:inherit;}
 input,button{border:none;border-radius:0;background:none;}
 p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word;line-height: 150%;}
 u {text-underline-position: under;}
+
+@media (max-width: 960px) {
+  html,body {
+    padding: 0 8px;
+    height: inherit; overflow: auto;
+  }
+}

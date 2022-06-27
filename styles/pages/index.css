@@ -1,7 +1,12 @@
-#card {
-  display: flex; flex-wrap: wrap; justify-content: space-between;
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+#card {display: flex; flex-wrap: wrap; justify-content: space-between;}
+#card li {display: grid; width: 500px; height: auto; border: 1px solid; margin-bottom: 40px;}
+#card li a {padding: 16px; background: #eee;}
 
-#card li {
-  width: 400px; height: auto; border: 1px solid;
+@media (max-width: 960px) {
+  #card li {width: 100%;}
 }
