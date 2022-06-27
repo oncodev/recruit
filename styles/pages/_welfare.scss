@@ -9,9 +9,9 @@ main {
       place-items: center; margin-bottom: 140px; width: 100%;
       span {color: var(--color-blue-1);}
       &_area {
-        display: flex; align-items: center; width: $width; margin-bottom: 16px;
+        display: flex; align-items: center; width: $width; margin-bottom: 40px;
         p {font-size: 1.25rem; padding-left: 40px; line-height: 180%;}
-        img {box-shadow: 4px 4px 10px #ebeef5;}
+        img {box-shadow: 4px 4px 10px #ebeef5; width: 300px; background: #f8fbff;}
       }
       &::before {content: ''; position: absolute; left: 100px; top: -100px; width: 900px; height: 900px; border-radius: 50%; z-index: -1;
         background: radial-gradient(50% 50% at 50% 50%, rgba(0, 55, 251, 0.13) 0%, rgba(111, 142, 255, 0.065) 40%, rgba(198, 210, 255, 0) 100%);
