@@ -6,7 +6,8 @@ html,body {
   line-height: 150%; -webkit-font-smoothing: antialiased;
   display: flex; justify-content: center; align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 100%; box-sizing: border-box;
+  position: relative;
 }
 
 a {color: inherit; text-decoration: none; position: relative;cursor: pointer;}
@@ -19,10 +20,8 @@ del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,
 b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
 table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,
 figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
-time,mark,audio,video,input,button {
-  margin:0;padding:0;border:0;vertical-align:baseline;list-style:none;}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
-  display:block;}
+time,mark,audio,video,input,button {margin:0;padding:0;border:0;vertical-align:baseline;list-style:none;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,
 q:before,q:after{content:'';content:none;}
@@ -36,9 +35,12 @@ input,button{border:none;border-radius:0;background:none;}
 p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word;line-height: 150%;}
 u {text-underline-position: under;}
 
-@media (max-width: 960px) {
-  html,body {
-    padding: 0 8px;
-    height: inherit; overflow: auto;
-  }
+html::after {content: ""; position: absolute; right: 700px; top: -1000px; width: 1500px; height: 1500px; z-index: -1; border-radius: 50%; background: radial-gradient(50% 50% at 50% 50%, rgba(0, 135, 251, 0.2) 0%, rgba(111, 142, 255, 0.1) 49.48%, rgba(198, 210, 255, 0) 100%);}
+html::before {content: ""; position: absolute; right: -700px; top: 400px; width: 1500px; height: 1500px; z-index: -1; border-radius: 50%; background: radial-gradient(50% 50% at 50% 50%, rgba(0, 135, 251, 0.2) 0%, rgba(111, 142, 255, 0.1) 49.48%, rgba(198, 210, 255, 0) 100%);}
+
+@media (max-width: 1600px) {
+  html::after,
+  html::before {content: none;}
+  body {padding: 0 8px; overflow: auto;}
 }
+@media (max-width: 960px) {body {height: inherit;}}

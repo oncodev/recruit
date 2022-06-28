@@ -25,11 +25,14 @@ jsonData.data.map((i)=>{
   // + "<p>" + i.position + "</p>"
   // + "<p>" + i.stack + "</p>";
   // + "<a src=\""+i.url+"\">button</a>";
+  li.dataset.id = i.id;
   li.innerHTML += `
-    <p>${i.id}</p>
-    <p>${i.lab}</p>
-    <p>${i.position}</p>
-    <p>${i.stack}</p>
+    <p>Lab<span>${i.lab}</span></p>
+    <p>Position<span>${i.position}</span></p>
+    <p>Due<span>${i.due}</span></p>
+    <!-- 메인화면 카드에서는 안보이고 -->
+    <!-- 카드를 클릭 후 상세 페이지에서 보여질 텍스트 부분 -->
+    <!-- <p>${i.stack}</p> -->
     <a src=${i.url}>For more information</a>
   `;
   recruitDataSet.append(li)

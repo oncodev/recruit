@@ -1,12 +1,23 @@
-.main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.main {display: flex; justify-content: space-between; align-items: center; padding: 0 16px; max-width: 1600px; overflow: hidden; overflow-y: hidden;}
+#card {display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; position: relative;}
+#card::before {content: 'Current calls'; position: absolute; top: -40px; left: 8px; width: 200px; height: 40px; color: var(--color-5); font-weight: bold;}
+#card li {display: grid; width: 500px; height: auto; border: 1px solid var(--color-2); margin-bottom: 40px; border-radius: 10px; gap: 8px; padding: 24px 16px; box-shadow: 2px 2px 4px #eee; background: var(--color-0);}
+#card li p {display: flex; justify-content: space-between; color: var(--color-5);}
+#card li p span {font-weight: 500; color: var(--color-6);}
+#card li a {padding: 16px; background: var(--color-4); border-radius: 10px; position: relative; color: var(--color-5); margin-top: 24px;}
+#card li a::before {content: ''; width: 80px; height: 48px; position: absolute; top: 4px; right: 0; transform: scale(0.6);
+  /* background-image: no-repeat url('data:image/svg+xml;utf8,<svg width="75" height="48" viewBox="0 0 75 48" fill="none"><path d="M2 24H72.5" stroke="#548bb1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M51 2C51.4 2 65.8333 16.6667 73 24L51 46" stroke="#548bb1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>'); */
+  background: no-repeat url('../../image/i_card_arrow_1.svg');
 }
-#card {display: flex; flex-wrap: wrap; justify-content: space-between;}
-#card li {display: grid; width: 500px; height: auto; border: 1px solid; margin-bottom: 40px;}
-#card li a {padding: 16px; background: #eee;}
 
+
+@media (max-width: 1600px) {
+  #card {margin-top: 40px;}
+  #card li {width: 49%; margin-bottom: 16px; font-size: .75rem; padding: 16px;}
+}
 @media (max-width: 960px) {
+  .main {overflow-y: auto;}
+  .main {padding: 0 8px;}
+  #card {margin-top: 40px;}
   #card li {width: 100%;}
 }
