@@ -1,0 +1,5 @@
+.wrap {display: flex; justify-content: space-between; align-items: center; padding: 0 16px; max-width: 1600px;}
+
+@media (max-width: 1600px) {
+  .wrap {overflow-y: auto; padding: 0 8px;}
+}

@@ -1,0 +1,26 @@
+/* 컨텐츠가 스크롤되는 영역 */
+
+/*
+  [1] 페인트 수
+  contents 영역은 브라우저에서 paint 저속 스크롤 부분에 해당하지만
+  해당 페이지에 스크롤 자체가 그렇게 길지 않기 때문에 페인수에 상관없이 적용함
+  
+  [2] 레이아웃 관련
+  header GNB를 fixed로 적용하지 않고 레이아웃 자체를 고정시키고 document에 스크롤을 적용해서
+  반응형 시 contents 부분만 스크롤이 적용 되어있음
+*/
+.wrap .scroll {height: auto; overflow: auto; scrollbar-width: none; width: 100%; display: grid;}
+.wrap .scroll::-webkit-scrollbar {display: none;}
+
+/* 스클로되는 contents 영역의 컨텐츠 박스 */
+/* 영향받는 페이지 : company, lab */
+.wrap .scroll .content-box {display: grid; height: 500px; background: #eee; margin-top: 80px; padding: 28px;}
+.wrap .scroll .content-box .content-title {font-size: 1rem; width: 120px; height: 40px; text-align: center; border-bottom: 1px solid var(--color-6);}
+
+@media (max-width: 1600px) {
+  .wrap .scroll .content-box {padding: 16px; margin-top: 40px;}
+  .wrap .scroll .content-box .content-title {font-size: .75rem; height: 28px; margin: 4px;}
+}
+@media (max-width: 960px) {
+  .wrap .scroll .content-box {padding: 8px;}
+}
