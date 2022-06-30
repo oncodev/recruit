@@ -9,5 +9,13 @@
 @import './components/header.css';
 @import './components/footer.css';
 
+/* page - contents wrap */
+@import './pages/_wrap.css';
+/* page - contents scroll area */
+@import './pages/_scroll.css';
+
 /* page */
 @import './pages/index.css';
+@import './pages/company.css';
+@import './pages/lab.css';
+@import './pages/faq.css';
