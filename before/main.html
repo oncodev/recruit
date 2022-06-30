@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css"/>
+  <title>Oncocross company page</title>
+</head>
+<body>
+  <wc-header></wc-header>
+  <main class="company">
+    <section class="title">
+      <div class="title_box">
+        <h1>온코크로스는 어떤 회사일까</h1>
+        <p>온코크로스는 사람을 살리는 <span>가치있는 연구</span>를 하며 <br/> <span>환자에게 정말 필요한 것을 만드는</span> AI 신약 회사입니다.</p>
+      </div>
+    </section>
+    <section class="message">
+      <div class="ceo">
+        <img src="/recruit/images/company/company_ceo.png" alt="ceo image" />
+        <div class="ceo_message">
+          <p>의사로 재직 당시 매일 생사를 오가는 암 환자들을 돌보았습니다. 환자의 상황이 나빠질때마다 환자들에게 정말 필요한 게 무엇인지 고민하게 되었고, 예후가 더 나빠지지 않게 하기 위해 AI 신약 개발을 시작하게 되었습니다.</p>
+          <p>암 환자와 난치성 질환과 희소 질환 환자들이 나을 수 있는 약을 개발하여 환자의 삶에 고통을 덜고 희망을 드리는 것이 온코크로스의 목표 입니다.</p>
+          <p>Yi Rang KIM   M.D., Ph.D. / CEO</p>
+        </div>
+      </div>
+      <div class="cdo">
+        <img src="/recruit/images/company/company_cdo.png" alt="cdo image" />
+        <div class="cdo_message">
+          <p>혈액종양내과 의사로 대학교수로 재직했을 때, 제가 담당했던 암종은 매우 난치성이고 희귀한 암종들 위주였습니다.</p>
+          <p>치료가 어려운 환자들을 보면 마음이 좋지가 않았고, 이들을 어떻게 도와줄 수 있을까에 대해 많은 고민이 있었습니다.</p>
+          <p>온코크로스에서 한국 뿐만 아니라 전세계에 치료에 어려움이 있는 환자들이 삶을 이어갈 수 있도록 돕는 것을 목표로 생각하고 있습니다.</p>
+          <p>Ji Hoon KANG   M.D., Ph.D. / CDO</p>
+        </div>
+      </div>
+    </section>
+    <section class="vision">
+      <p>온코크로스는 사람을 치료하는 일을 위해 <br/> <span>세가지 가치를 기준</span>으로 세웠습니다.</p>
+      <img src="/recruit/images/company/company_value.png" alt="value image" />
+      
+    </section>
+    <section class="platform">
+      <p>온코크로스는 <br/> <span>양질의 환자 데이터를 수집</span>하고, <span>유전자 발현 패턴 분석 접근법</span>을 사용하여 <br/> <span>AI 플랫폼</span>의 알고리즘으로 의료데이터를 분석하는 기술을 갖고 있습니다.</p>
+      <div class="onco_park_ci">
+        <img src="/recruit/images/company/company_platform.png" alt="oncopark image">
+      </div>
+      <!-- <div class="three">
+        <div class="card1"><img src="/recruit/images/company/company_data.png" alt="data image"></div>
+        <div class="card2"><img src="/recruit/images/company/company_transcriptome.png" alt="transcriptome image"></div>
+        <div class="card3"><img src="/recruit/images/company/company_algorithm.png" alt="algorithm image"></div>
+      </div> -->
+    </section>
+    <section class="history">
+      <p>온코크로스는 2015년에 설립되어 2022년까지 <br/> <span>신약 연구개발의 길</span>을 걸어왔습니다.</p>
+      <img src="/recruit/images/company/company_history_1.png" alt="history image">
+      <img src="/recruit/images/company/company_history_2.png" alt="history image">
+    </section>
+    <section class="otherpage">
+      <a href="/pages/work">
+        <figure>
+          <img src="/recruit/images/footer/otherpage_1.png" alt="other page">
+          <figcaption>우리가 하는 의미있는 일</figcaption>
+        </figure>
+      </a>
+      <a href="/pages/welfare">
+        <figure>
+          <img src="/recruit/images/footer/otherpage_2.png" alt="other page">
+          <figcaption>업무의 기회와 따뜻한 복지</figcaption>
+        </figure>
+      </a>
+    </section>
+    <wc-footer></wc-footer>
+  </main>
+  <script>
+    import data from '../components/data.js'
+    console.log(data);
+    const dataArr = data;
+  </script>
+  <script src="../components/recruit.js"></script>
+  <script type="module" src="../recruit/components/data.js"></script>
+  <script type="module" src="../components/script.js"></script>
+</body>
+</html>
