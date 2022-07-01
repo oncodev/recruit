@@ -1,0 +1,10 @@
+{
+  "data": [
+    {"id": "1", "lab": "AI 연구소", "position": "Data analyst", "due": "2022. 01. 01", "stack": "원하는 스택과 경험 1", "url": "/"},
+    {"id": "2", "lab": "AI 연구소", "position": "Data analyst", "due": "2022. 01. 01", "stack": "원하는 스택과 경험 2", "url": "/"},
+    {"id": "3", "lab": "AI 연구소", "position": "Data analyst", "due": "2022. 01. 01", "stack": "원하는 스택과 경험 3", "url": "/"},
+    {"id": "4", "lab": "바이오 연구소", "position": "Bioinfomatics", "due": "2022. 01. 01", "stack": "원하는 스택과 경험 4", "url": "/"},
+    {"id": "5", "lab": "바이오 연구소", "position": "Bioinfomatics", "due": "2022. 01. 01", "stack": "원하는 스택과 경험 5", "url": "/"},
+    {"id": "6", "lab": "바이오 연구소", "position": "Bioinfomatics", "due": "2022. 01. 01", "stack": "원하는 스택과 경험 6", "url": "/"}
+  ]
+}
