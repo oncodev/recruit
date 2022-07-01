@@ -1,0 +1,10 @@
+/* AI lab */
+.ailab {}
+.ailab .people {}
+.ailab .need {}
+
+/* bio lab */
+.biolab {}
+
+@media (max-width: 1400px) {}
+@media (max-width: 960px) {}
