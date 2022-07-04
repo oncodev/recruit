@@ -5,9 +5,9 @@ export default class HeaderComponent extends HTMLElement {
         <a href="/recruit"><span></span>Careers</a>
       </div>
       <div class="gnb">
-        <a href="../recruit/pages/company.html">채용 안내</a>
-        <a href="../recruit/pages/lab.html">직무 소개</a>
-        <a href="../recruit/pages/faq.html">문의</a>
+        <a href="../pages/company.html">채용 안내</a>
+        <a href="../pages/lab.html">직무 소개</a>
+        <a href="../pages/faq.html">문의</a>
       </div>
     `;
   }
