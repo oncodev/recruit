@@ -1,4 +1,4 @@
-.main {overflow: hidden; position: relative;}
+.main {overflow: hidden; position: relative; display: flex; justify-content: space-between; align-items: center;}
 
 #card {display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; position: relative;}
 #card::before {content: 'Current calls'; position: absolute; top: -40px; left: 8px; width: 200px; height: 40px; color: var(--color-5); font-weight: bold;}

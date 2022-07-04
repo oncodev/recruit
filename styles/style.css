@@ -10,9 +10,9 @@
 @import './components/footer.css';
 
 /* page - contents wrap */
-@import './pages/_wrap.css';
+@import './pages/wrap.css';
 /* page - contents scroll area */
-@import './pages/_scroll.css';
+@import './pages/scroll.css';
 
 /* page */
 @import './pages/index.css';
