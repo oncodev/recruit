@@ -33,15 +33,19 @@ function callModal(id) {
   let due = cardNode.querySelector(".due");
   cardNode.innerHTML = `
     <div class="inner">
-      <ul class="">
-        <li>Department : ${lab.textContent}</li>
-        <li>Position : ${position.textContent}</li>
-        <li>Due : ${due.textContent}</li>
-      </ul>
+      <div class="area">
+        <p>Department : ${lab.textContent}</p>
+        <p>Position : ${position.textContent}</p>
+        <p>Due : ${due.textContent}</p>
+      </div>
+      <div class="area">
+        <p>공통 안내사항</p>
+        <p>허위로 작성한 경우</p>
+      </div>
     </div>
     <div class="inner">
-      <div>1</div>
-      <div>2</div>
+      <div class="area"></div>
+      <div class="area"></div>
     </div>
     <button id="close"></button>
   `;
