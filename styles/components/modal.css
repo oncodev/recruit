@@ -1,0 +1,14 @@
+.modal {display: none; width: 100%; height: 100%; z-index: 2; position: absolute; top: 0; left: 0; background: #eee;}
+.modal .inner {width: 100%;}
+.modalActive {display: flex;}
+#close {position: absolute; top: 3%; right: 3%; width: 24px; height: 24px;
+  background: no-repeat url('../../image/i_modal_close.svg'); background-position: center; background-size: contain;
+}
+#card .modalActive .cloneActive {display: flex; width: 100%; margin-bottom: 0px;}
+
+@media (max-width: 1400px) {
+}
+@media (max-width: 765px) {
+  #close {right: 7%;}
+  #card .modalActive .cloneActive {display: grid;}
+}

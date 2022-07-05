@@ -1,6 +1,6 @@
 .main {overflow: hidden; position: relative; display: flex; justify-content: space-between; align-items: center;}
 
-#card {display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%; position: relative;}
+#card {display: flex; flex-wrap: wrap; justify-content: space-between; width: 100%;}
 #card::before {content: 'Current calls'; position: absolute; top: -40px; left: 8px; width: 200px; height: 40px; color: var(--color-5); font-weight: bold;}
 
 /* card */
@@ -19,10 +19,7 @@
 }
 @media (max-width: 960px) {
   #card {margin-top: 40px;}
+  #card {overflow: auto;}
+  #card::-webkit-scrollbar {display: none;}
   #card li {width: 100%;}
 }
-
-/* modal */
-.modal {display: none; width: 100%; height: 550px; z-index: 2; position: absolute; top: 15%; left: 0; background: #eee; border-radius: 10px;}
-.modal .inner {width: 100%;}
-.modalActive {display: flex;}

@@ -21,29 +21,43 @@ function callModal(id) {
 
   let addNode = document.querySelector('.modal');
   addNode.classList.add('modalActive');
-
+  
   let clickedCard = recruitDataSet.querySelector(`li[data-id="${id}"]`);
-
+  
   let cardNode = clickedCard.cloneNode(true);
-  cardNode.dataset.id = (parseInt(cardNode.dataset.id) + 100).toString();
+  cardNode.classList.add('cloneActive');
+  // cardNode.dataset.id = (parseInt(cardNode.dataset.id) + 100).toString();
 
   let lab = cardNode.querySelector(".lab");
   let position = cardNode.querySelector(".position");
   let due = cardNode.querySelector(".due");
   cardNode.innerHTML = `
     <div class="inner">
-      <div>${lab.textContent}</div>
-      <div>${position.textContent}</div>
-      <div>${due.textContent}</div>
+      <ul class="">
+        <li>Department : ${lab.textContent}</li>
+        <li>Position : ${position.textContent}</li>
+        <li>Due : ${due.textContent}</li>
+      </ul>
     </div>
     <div class="inner">
       <div>1</div>
       <div>2</div>
     </div>
+    <button id="close"></button>
   `;
   addNode.appendChild(cardNode);
   clickedCard.after(addNode);
 
+  addNode.addEventListener('click', () => { // 현재는 창 자체를 클릭하면 닫히는데 -> close를 클릭 시 창이 닫히도록 해야함
+    addNode.classList.remove('modalActive'); // 모달창 닫기
+    addNode.classList.remove('cloneActive'); // 클론노드
+    addNode.removeChild(cardNode); // 클론 노드창 삭제
+  });
+
   return true;
 }
 window.callModal = callModal;
+
+// window.addEventListener('click', (e) => {
+//   e.target === addNode ? addNode.classList.remove('modalActive') : false
+// })
