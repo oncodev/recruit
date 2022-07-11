@@ -1,7 +1,12 @@
-.modal {display: none; width: 100%; height: 100%; z-index: 2; position: absolute; top: 0; left: 0; background: #eee;}
-.modal .inner {width: 100%;}
-.modal .inner:nth-last-of-type(1) {width: 50%;}
-.modal .inner .area {height: 50%; background: #f7f7f7; margin-bottom: 8px; border-radius: 8px;}
+.modal {display: none; width: 100%; height: 100%; z-index: 2; position: absolute; top: 0; left: 0;}
+.modal .modal_inner {width: 100%;}
+.modal .modal_inner:nth-last-of-type(1) {width: 50%;}
+.modal .modal_inner .modal_area {display: grid; gap: 16px; height: 70%; background: #f7f7f7; margin-bottom: 8px; border-radius: 8px;}
+.modal .modal_inner .modal_area .modal_intro {display: flex; gap: 16px; width: 100%; justify-content: space-between;}
+.modal .modal_inner .modal_area .modal_intro div {display: grid; background: #eee; width: 100%;}
+.modal .modal_inner .modal_area .modal_intro .modal_card_text {padding: 40px;}
+#card .modal .modal_inner .modal_area .modal_intro a {margin-top: 0px;}
+#card .modal .modal_inner .modal_area .modal_intro a::before {top: inherit; bottom: 4px;}
 .modalActive {display: flex;}
 #close {position: absolute; top: 3%; right: 3%; width: 24px; height: 24px;
   background: no-repeat url('../../image/i_modal_close.svg'); background-position: center; background-size: contain;
