@@ -33,6 +33,12 @@ function callModal(id) {
   let lab = cloneCard.querySelector(".lab");
   let position = cloneCard.querySelector(".position");
   let due = cloneCard.querySelector(".due");
+  // let experience = cloneCard.querySelector(".experience");
+  // let recruitment = cloneCard.querySelector(".recruitment");
+  // let stack = cloneCard.querySelector(".stack");
+  // let duty = cloneCard.querySelector(".duty");
+  // let requirements = cloneCard.querySelector(".requirements");
+  // let preferential = cloneCard.querySelector(".preferential");
 
   cloneCard.innerHTML = `
     <div class="modal_inner">
@@ -46,9 +52,12 @@ function callModal(id) {
           <a href="#">직무 소개 보러가기</a>
         </div>
         <div class="modal_intro">
-          <div>직무</div>
-          <div>자격요건</div>
-          <div>우대사항</div>
+          <div>경력 : ${jsonData.data.experience}</div>
+          <div>모집인원 : ${jsonData.data.recruitment}</div>
+          <div>스택 : ${jsonData.data.stack}</div>
+          <div>직무 : ${jsonData.data.duty}</div>
+          <div>자격요건 : ${jsonData.data.requirements}</div>
+          <div>우대사항 : ${jsonData.data.preferential}</div>
         </div>
       </div>
       <div class="modal_area">
@@ -57,8 +66,22 @@ function callModal(id) {
       </div>
     </div>
     <div class="modal_inner">
-      <div class="modal_area"></div>
-      <div class="modal_area"></div>
+      <p>지원 서류 및 방식</p>
+      <div class="modal_area">
+        <ul>
+          <li>지원 서류</li>
+          <li>CV</li>
+          <li>자기소개서</li>
+        </ul>
+        <ul>
+          <li>지원 방식</li>
+          <li>E-mail로 제출</li>
+          <li>oncocross@oncocross.com</li>
+        </ul>
+      </div>
+      <div class="modal_area">
+        <img src="https://user-images.githubusercontent.com/97486189/180773549-dc293c76-48e9-4a31-9146-08214d20c74d.png" alt="image"/>
+      </div>
     </div>
     <button id="close"></button>
   `;
