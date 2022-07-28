@@ -44,46 +44,46 @@ function callModal(id) {
     <div class="modal_inner">
       <div class="modal_area">
         <div class="modal_intro">
-          <div class="modal_card_text">
             <p>Department : ${lab.textContent}</p>
             <p>Position : ${position.textContent}</p>
             <p>Due : ${due.textContent}</p>
-          </div>
-          <a href="#">직무 소개 보러가기</a>
+            <a href="#">직무 소개 보러가기</a>
         </div>
         <div class="modal_intro">
-          <div>경력 : ${jsonData.data.experience}</div>
-          <div>모집인원 : ${jsonData.data.recruitment}</div>
-          <div>스택 : ${jsonData.data.stack}</div>
-          <div>직무 : ${jsonData.data.duty}</div>
-          <div>자격요건 : ${jsonData.data.requirements}</div>
-          <div>우대사항 : ${jsonData.data.preferential}</div>
+          <ul>
+            <li><p>직무</p><p>Front-End ~ DevOps까지의 플랫폼 설계 및 개발 총괄</p></li>
+            <li><p>자격요건</p><p>Back End에 대한 개발 경험이 있으신 분Python 등 언어로 어플리케이션 설계 및 개발 경험이 있으신 분SPA(React, Vue.js 등) 개발 경험이 있으신 분DB 설계 경험이 있으신 분Git을 이용한 코드 형상 관리 및 협업이 가능한 분긍정적이며 자기 주도적인 성장이 가능한 분</p></li>
+            <li><p>우대사항</p><p>Front-End 개발 관리 경험이 있으신 분프로젝트의 초기 설계 참여, 개발 및 운영을 해보신 분오픈소스 프로젝트 참여 또는 Contribution 경험 있으신 분스타트업 환경에 이해도가 있으신 분</p></li>
+            <!-- <li>직무 : ${jsonData.data.duty}</li>
+            <li>자격요건 : ${jsonData.data.requirements}</li>
+            <li>우대사항 : ${jsonData.data.preferential}</li> -->
+            <li><p>공통 안내사항</p><p>허위로 작성한 경우</p></li>
+          </ul>
         </div>
-      </div>
-      <div class="modal_area">
-        <p>공통 안내사항</p>
-        <p>허위로 작성한 경우</p>
       </div>
     </div>
     <div class="modal_inner">
-      <p>지원 서류 및 방식</p>
       <div class="modal_area">
-        <ul>
-          <li>지원 서류</li>
-          <li>CV</li>
-          <li>자기소개서</li>
+        <ul class="modal_to">
+          <div class="modal_intro">
+            <span>지원 서류 및 방식</span>
+            <button id="close"></button>
+          </div>
+          <li>
+            <p>지원 서류</p>
+            <p>CV, 자기소개서(Motivation letter)</p>
+          </li>
+          <li>
+            <p>지원 방식</p>
+            <p>E-mail로 제출 recruit@oncocross.com</p>
+          </li>
+          <li>
+            <img src="https://user-images.githubusercontent.com/97486189/180773549-dc293c76-48e9-4a31-9146-08214d20c74d.png" alt="image"/>
+            <button>지원하기</button>
+          </li>
         </ul>
-        <ul>
-          <li>지원 방식</li>
-          <li>E-mail로 제출</li>
-          <li>oncocross@oncocross.com</li>
-        </ul>
-      </div>
-      <div class="modal_area">
-        <img src="https://user-images.githubusercontent.com/97486189/180773549-dc293c76-48e9-4a31-9146-08214d20c74d.png" alt="image"/>
       </div>
     </div>
-    <button id="close"></button>
   `;
   addModal.appendChild(cloneCard);
   clickedCard.after(addModal);
@@ -96,12 +96,12 @@ window.callModal = callModal;
 let closeButton = document.querySelector("#close");
 let removeClass = ["modalActive", "cloneActive"]; // 모달창, 클론노드 닫기
 let removeModal = addModal.classList.remove(...removeClass);
-let cloneNode = removeModal.removeChild(cloneCard); // 클론 노드창 삭제
+// let cloneNode = removeModal.removeChild(cloneCard); // 클론 노드창 삭제
 
 addModal.addEventListener('click', (e) => {
   console.log(removeModal);
   e.target === addModal ? removeModal : false
-  cloneNode();
+  // cloneNode();
 });
 
 

@@ -38,11 +38,7 @@ Response schema:
       ...
     ]
   }
-
-Notion API 결과값에서 실제 key와 값을 추출한다.
-*/
-/*
-url, due 이런 분류가 컬럼이에요. 컬럼 값들의 모임을.. DB에서는 레코드라고 하는데 그냥 레코드라고 쓸까요? 네에!
+  Notion API 결과값에서 실제 key와 값을 추출한다.
 */
 // results키의 값은 Database의 레코드(=row)의 배열이므로 순회하면서 각 레코드의 컬럼 값을 추출한다.
 let values = data.results.map((row) => {
