@@ -1,2 +1,22 @@
 .wrap .welfare .content-box {margin-top: 0px;}
 .wrap .welfare .content-box .content-title {width: 80px;}
+
+
+
+
+
+/* dropdown */
+details {color: var(--color-1); margin: 0 auto; margin-bottom: .5rem; border-radius: 5px; width: 100%; height: 100%;}
+summary {padding: 1rem; display: block; padding-left: 2.2rem; position: relative; cursor: pointer; letter-spacing: 1px;}
+summary:before {content: ''; border-width: .4rem; border-style: solid; border-color: transparent transparent transparent #fff; position: absolute; top: 1.3rem; left: 1rem; transform: rotate(0); transform-origin: .2rem 50%; transition: .25s transform ease;}
+
+details[open] > summary:before {transform: rotate(90deg);}
+details summary::-webkit-details-marker {display:none;}
+details > ul {padding-bottom: 1rem; margin-bottom: 0;}
+.details-expanded {padding: 0 2rem;}
+
+@media (max-width: 960px) {
+  summary {font-size: .875rem; padding: 4px 2rem;}
+  summary::before {top: 10px;}
+  .details-expanded {font-size: .875rem; padding: 1rem 2rem;}
+}

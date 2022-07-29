@@ -5,7 +5,7 @@
 .modal .modal_inner .modal_area .modal_intro {display: flex; justify-content: space-between; align-items: flex-end;}
 .modal .modal_inner .modal_area .modal_intro:nth-of-type(1) {align-items: center;}
 .modal .modal_inner .modal_area .modal_intro div {display: flex;  background: #eee; width: 100%;}
-.modal .modal_inner .modal_area img {width: 70%; height: 100%; object-fit: cover; border-radius: 8px;}
+.modal .modal_inner .modal_area img {width: 50%; height: 100%; object-fit: cover; border-radius: 8px;}
 .modal .modal_inner .modal_area .modal_to {display: grid; gap: 8px;}
 .modal .modal_inner .modal_area .modal_to span {display: flex; align-items: center; color: var(--color-5);}
 #card .modal .modal_inner .modal_area .modal_to li {padding: 8px; gap: 4px; display: flex; justify-content: space-between; align-items: center; width: inherit;}
@@ -18,7 +18,7 @@
 #card .modal .modal_inner .modal_area ul li {margin: inherit; padding: inherit;}
 #card .modal .modal_inner .modal_area .modal_intro a {width: 30%; margin-top: 0px; padding: 10px; text-align: center;}
 #card .modal .modal_inner .modal_area .modal_intro a::before {display: none;}
-#card .modal .modal_inner .modal_area button {height: 40px; border-radius: 8px; color: var(--color-0); background: #333;}
+#card .modal .modal_inner .modal_area button {width: 360px; height: 48px; border-radius: 8px; color: var(--color-7); background: var(--color-5);}
 .modalActive {display: flex;}
 #card #close {
   /* position: absolute; top: 3%; right: 3%; */

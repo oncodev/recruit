@@ -1,5 +1,5 @@
 .footer {display: grid; margin: 40px 0; width: 100%; justify-content: center;}
-.footer a {font-size: 0.875rem; color: var(--color-3);}
+.footer a {font-size: 0.875rem; color: var(--color-1);}
 
 @media (max-width: 960px) {
   .footer {margin: 32px 0;}

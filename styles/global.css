@@ -35,8 +35,11 @@ input,button{border:none;border-radius:0;background:none;}
 p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word;line-height: 150%;}
 u {text-underline-position: under;}
 
+/*
 html::after {content: ""; position: absolute; right: 700px; top: -1000px; width: 1500px; height: 1500px; z-index: -1; border-radius: 50%; background: radial-gradient(50% 50% at 50% 50%, rgba(0, 135, 251, 0.2) 0%, rgba(111, 142, 255, 0.1) 49.48%, rgba(198, 210, 255, 0) 100%);}
 html::before {content: ""; position: absolute; right: -700px; top: 400px; width: 1500px; height: 1500px; z-index: -1; border-radius: 50%; background: radial-gradient(50% 50% at 50% 50%, rgba(0, 135, 251, 0.2) 0%, rgba(111, 142, 255, 0.1) 49.48%, rgba(198, 210, 255, 0) 100%);}
+*/
+body {background: var(--color-5);}
 
 @media (max-width: 1400px) {
   html::after,

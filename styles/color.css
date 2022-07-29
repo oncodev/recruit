@@ -1,5 +1,5 @@
 /* 기존 컬러 */
-:root {
+/* :root {
   --color-0: #fff;
   --color-1: #0071FF;
   --color-2: #ECF2FA;
@@ -7,9 +7,9 @@
   --color-4: #f1f9ff;
   --color-5: #88b3d1;
   --color-6: #548bb1;
-}
+} */
 
-/* figma 기준
+/* figma 기준 */
 :root {
   --color-1: #fff;
   --color-2: #92C3FF;
@@ -17,5 +17,5 @@
   --color-4: #143B86;
   --color-5: #031040;
   --color-6: #000;
+  --color-7: #F1F9FF;
 }
-*/
